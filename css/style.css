@@ -5,6 +5,8 @@ Remember!!!
 1 point for tag selectors and pseudo-elements 
 */
 
+
+
 #titleHeader {
     margin: 0;
     text-align: center;
@@ -21,8 +23,17 @@ Remember!!!
     text-align: center;
     background-color: #AED6F1;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    /* bottom: 0; */
 }
 
+@media (min-width: 1790px) {
+    #pageBottom {
+        position: absolute;
+        bottom: 0;
+    }
+}
 
 /* #003B6f Doctor Who Blue */
