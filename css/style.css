@@ -1,0 +1,20 @@
+/*
+Remember!!! 
+100 points for IDs
+10 points for classes and pseudo-classes
+1 point for tag selectors and pseudo-elements 
+*/
+
+#titleHeader {
+    margin: 0;
+    text-align: center;
+    background-color: #AED6F1;
+};
+
+
+nav a {
+    text-align: center;
+    background-color: #AED6F1;
+}
+
+/* #003B6f Doctor Who Blue */
