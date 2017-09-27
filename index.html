@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <body>
     <div id="mainContainer">
         <div class="header">
             <h1 id="titleHeader">CleanBreak</h1>
         </div>
-
-        <!-- <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
-            </div>
-        </div> -->
 
         <div id="mainNav">
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D0D3D4">
@@ -34,7 +32,7 @@
                       <a class="nav-link" href="https://rynsp8.github.io/CleanBreak/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Sign Up</a>
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Sign Up</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Rate</a>
@@ -47,17 +45,50 @@
               </nav>
         </div>
     
+        <!-- <div class="container">
+            <h2>Join the Revolution!</h2> -->
+            <!-- Trigger the modal with a button -->
+            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button> -->
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <h4 class="modal-title">Join the Revolution!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Please fill out the form below.</p>
+                  </div>
+                  <div id="formBox">
+                    <form action="" id="signUpForm" onclick="submit">
+                        <label for="nameInput">Name: </label>
+                        <input type="text" id="nameInput" required> <br>
+                        <label for="emailInput">Email: </label>
+                        <input type="email" id="emailInput" required>
+                        <input type="submit" class="btn btn-default" value= "submit" onclick="">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <!-- <input type="submit" class="btn btn-default" value= "submit" onclick="">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+
         <div id="upperContent">
-            <h2>Biographical Information</h2>
+            <h2>Why We Do What We Do.</h2>
                 <p>
-                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you 
-                    a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder 
-                    of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do 
-                    not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who 
-                    loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in 
-                    which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious 
-                    physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to 
-                    enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+                    The time is now.  There is no waiting.  You're in need, and we're here to help.  With CleanBreak, you'll be able to find
+                    a safe, clean, and accessible restroom while you travel to and fro.
                 </p>
         </div>
 
