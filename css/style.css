@@ -51,6 +51,28 @@ Modal
     margin-top: 10px;
 }
 
+.inputField {
+    background-color: #ECF0F1;
+    border: 1px solid #ECF0F1;
+}
+
+.modal-header {
+    background-color: #AED6F1;
+}
+
+#subBTN, #cnlBTN {
+    background-color: #AED6F1;
+}
+
+#subBTN:hover, #cnlBTN:hover {
+    background-color: #2E86C1;
+}
+
+#errorMSG {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
 
 
 
