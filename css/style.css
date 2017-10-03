@@ -87,7 +87,7 @@ SignUP Modal
 /********************************
 Rate Modal
 ********************************/
-#star-five { 
+.star-five { 
     margin: 50px 0; 
     position: relative; 
     display: block;
@@ -103,7 +103,7 @@ Rate Modal
     -o-transform: rotate(35deg); 
 }
 
-#star-five:before { 
+.star-five:before { 
     border-bottom: 80px solid #ABEBC6; 
     border-left: 30px solid transparent; 
     border-right: 30px solid transparent; 
@@ -120,7 +120,7 @@ Rate Modal
     -o-transform: rotate(-35deg); 
 } 
 
-#star-five:after { 
+.star-five:after { 
     position: absolute; 
     display: block; 
     color: #ABEBC6; 
