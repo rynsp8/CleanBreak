@@ -12,3 +12,8 @@ Added a Modal Box to the 'Sign Up' Nav Bar option with some styling and form val
 
 _____________________________________________
 
+12 October, 2017
+
+removed the error message for my radio buttons and added some javascript to clear out the form when the cancel button is clicked.
+
+_____________________________________________
