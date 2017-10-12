@@ -64,7 +64,7 @@
                     <p>Please fill out the form below.</p>
                   </div>
                   <div id="formBox">
-                    <form action="" id="signUpForm" onclick="return checkRadio()">
+                    <form action="post" id="signUpForm" onclick="">
                         <label for="nameInput">Name: </label>
                         <input type="text" id="nameInput" class ="inputField" required> <br>
                         <label for="emailInput">Email: </label>
@@ -72,11 +72,12 @@
                         <label for="overRadio">Over</label>
                         <input type="radio" id="overRadio" name="rollDirection" required>
                         <label for="underRadio">Under</label>
-                        <input type="radio" id="underRadio" name="rollDirection" required> 
-                        <p id="errorMSG">Hey, Check a button! We're not savages...</p> <br>
-                        <input type="submit" id="subBTN" class="btn btn-default" value= "submit" onclick="">
-                        <button type="button" id="cnlBTN" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <input type="radio" id="underRadio" name="rollDirection" required> <br>
+                        <!-- <p id="errorMSG">Hey, Check a button! We're not savages...</p> <br> -->
+                        <input type="submit" id="subBTN" class="btn btn-default" value="submit" onclick="">
+                        <button type="button" id="cnlBTN" class="btn btn-default" data-dismiss="modal" onclick="checkCNL">Cancel</button>
                     </form>
+
                   </div>
                   <div class="modal-footer">
                     <!-- <input type="submit" class="btn btn-default" value= "submit" onclick="">
@@ -159,17 +160,30 @@
                 infoWindow.open(map);
             }           
 
-            function checkRadio() {
-                var checkOver = document.getElementById("overRadio").checked;
-                var checkUnder = document.getElementById("underRadio").checked;
-                if (checkOver == false && checkUnder == false) {
-                    document.getElementById("errorMSG").style.display = "block"
-                    return false;
-                } else {
-                    document.getElementById("errorMSG").style.display = "none"
-                    return true;
-                }
-            };     
+            // function checkRadio() {
+            //     var checkOver = document.getElementById("overRadio").checked;
+            //     var checkUnder = document.getElementById("underRadio").checked;
+            //     if (checkOver == false && checkUnder == false) {
+            //         document.getElementById("errorMSG").style.display = "block"
+            //         return false;
+            //     } else {
+            //         document.getElementById("errorMSG").style.display = "none"
+            //         return true;
+            //     }
+            // };     
+
+// Clears the sign up modal when you hit cancel
+            document.getElementById('cnlBTN').onclick = function checkCNL() {
+                var name = document.getElementById('nameInput');
+                var email = document.getElementById('emailInput');
+                var over = document.getElementById('overRadio');
+                var under = document.getElementById('underRadio');
+                    console.log('it works')
+                    name.value = '';
+                    email.value = '';
+                    under.checked = false;
+                    over.checked = false;
+            }
 
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-3sGoiyaobdmNYanRdaO8IWZCpEQJd1c&callback=myMap"></script>
