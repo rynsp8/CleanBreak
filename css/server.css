@@ -1,0 +1,144 @@
+/*
+Remember!!! 
+100 points for IDs
+10 points for classes and pseudo-classes
+1 point for tag selectors and pseudo-elements 
+*/
+
+
+/* * {
+    border: 1px solid red;
+} */
+#titleHeader {
+    margin: 0;
+    text-align: center;
+    background-color: #AED6F1;
+};
+
+
+#upperContent, #lowerContent {
+    padding: 10px;
+}
+
+
+#footer {
+    /* text-align: center; */
+    /* background-color: #aed6f1; */
+}
+
+#pageBottom {
+    padding: 10px;
+    text-align: center;
+    background-color: #AED6F1;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+@media (min-width: 1790px) {
+    #pageBottom {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* #003B6f Doctor Who Blue */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************
+Modal
+********************************/
+
+/* #signUpForm {
+    padding: 10px;
+}
+
+#emailInput {
+    margin-top: 10px;
+}
+
+.inputField {
+    background-color: #ECF0F1;
+    border: 1px solid #ECF0F1;
+}
+
+.modal-header {
+    background-color: #AED6F1;
+}
+
+#subBTN, #cnlBTN {
+    background-color: #AED6F1;
+}
+
+#subBTN:hover, #cnlBTN:hover {
+    background-color: #2E86C1;
+}
+
+#errorMSG {
+    display: none;
+    color: red;
+    font-weight: bold;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
