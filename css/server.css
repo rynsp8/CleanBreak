@@ -33,7 +33,7 @@ Remember!!!
     font-weight: bold;
     margin-top: 10px;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
