@@ -79,19 +79,26 @@ Sign Up Modal
 /********************************
 Rate Modal
 ********************************/
-
-#starCont {
+.modal-body {
     display: block;
-    text-align: center;
     margin: 0 auto;
-    width: 50%;
+    text-align: center;
 }
+
+/* div.#starCont.stars { 
+border: 2px red solid;
+} */
 
 .star.rating {
     fill: gray;
 }
 
 .star.rating:hover{
+    fill: #58d68d;
+}
+
+.star:hover,
+.star:hover ~ .rating {
     fill: #58d68d;
 }
 
