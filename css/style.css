@@ -13,6 +13,10 @@ Remember!!!
     background-color: #AED6F1;
 };
 
+div #upperContent {
+    padding-left: 15px;
+}
+
 #footer {
     /* text-align: center; */
     /* background-color: #aed6f1; */
