@@ -40,7 +40,7 @@ Remember!!!
 
 
 /********************************
-Modal
+Sign Up Modal
 ********************************/
 
 #signUpForm {
@@ -76,8 +76,24 @@ Modal
 
 
 
+/********************************
+Rate Modal
+********************************/
 
+#starCont {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
 
+.star.rating {
+    fill: gray;
+}
+
+.star.rating:hover{
+    fill: #58d68d;
+}
 
 
 
