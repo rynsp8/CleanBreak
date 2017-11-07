@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src="https://use.fontawesome.com/f12e3c5691.js"></script>
 </head>
 
 <body>
@@ -86,7 +86,7 @@
               </div>    
             </div> 
 
-            <!-- Rate Modal -->
+            <!-- Rate Modal I will be attempting to use a 5 star rating system-->
             <div class="modal fade" id="rateModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -98,22 +98,19 @@
                         </div>
                         <div class="modal-body">
                             <p>Tell us what you think, in 5 stars or less.</p>
-                            <div id="starCONT" class="stars" data-stars="1">
-                                    <svg height="25" width="23" class="star rating" data-rating="1">
-                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-                                  </svg>
-                                  <svg height="25" width="23" class="star rating" data-rating="2">
-                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-                                  </svg>
-                                  <svg height="25" width="23" class="star rating" data-rating="3">
-                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-                                  </svg>
-                                  <svg height="25" width="23" class="star rating" data-rating="4">
-                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-                                  </svg>
-                                  <svg height="25" width="23" class="star rating" data-rating="5">
-                                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-                                  </svg>
+                            <div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
                             </div>
                             <div class="modal-footer">
                                     <input type="submit" class="btn btn-default" value= "submit" onclick="">
@@ -121,7 +118,7 @@
                             </div>
                         </div>
                         
-
+                        <!-- below is jQuery that returns a number that can be passed to a database -->
                         <script>
                                 $('.star.rating').click(function(){
                                     console.log( $(this).parent().data('stars') + ", " + $(this).data('rating'));
@@ -146,6 +143,9 @@
                 </p>
         </div>
 
+        <!-- Possibly in later versions of this page I will remove the lowerContent paragraph and replace it with something
+        more useful -->
+
         <div id="lowerContent" class="pl-4">
             <h2>Interesting Facts</h2>
                 <p>
@@ -160,6 +160,8 @@
                     avoid worse pains.
                 </p>
         </div>
+
+        <!-- below is JavaScript to enable a useful Google Maps API -->
 
         <div id="map" style="width:100%; height:400px; background-color: grey">
             Map will go here 
@@ -208,17 +210,7 @@
                 infoWindow.open(map);
             }           
 
-            // function checkRadio() {
-            //     var checkOver = document.getElementById("overRadio").checked;
-            //     var checkUnder = document.getElementById("underRadio").checked;
-            //     if (checkOver == false && checkUnder == false) {
-            //         document.getElementById("errorMSG").style.display = "block"
-            //         return false;
-            //     } else {
-            //         document.getElementById("errorMSG").style.display = "none"
-            //         return true;
-            //     }
-            // };     
+ 
 
 // Clears the sign up modal when you hit cancel
             document.getElementById('cnlBTN').onclick = function checkCNL() {

@@ -1,3 +1,4 @@
+//create an array of interesting facts related to bathrooms
 var facts = 
     [
         'Arthur Giblin is believed to have invented the first flushable toilet.',
@@ -36,8 +37,10 @@ var facts =
         'Some common words used for the loo are: powder room, lavatory, outhouse, ladies, convenience, washroom, men&#39s room, bathroom, dunny, bog, khazi, gents, garderobe, necessary, women&#39s room, restroom, potty, privy, the smallest room, cloakroom, latrine, place of easement, water closet (WC), john, can, little girls&#39 room, little boys&#39 room, throne room and facilities etc.'
     ]
 
+//initialized a variable to target my factBTN on my 'toServer.html' page
 var factBTN = document.getElementById('factBTN');
 
+//added an even listenter to my factBTN and used the number variable to cycle through my facts array.
 factBTN.addEventListener('click', function() {
     var number = Math.floor(Math.random() * 34) + 1;
     document.getElementById('factDisplay').innerHTML = facts[number];
