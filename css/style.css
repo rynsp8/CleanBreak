@@ -101,8 +101,20 @@ Sign Up Modal
     padding: 10px;
 }
 
+#nameInput {
+    width: 80%;
+}
+
 #emailInput {
+    width: 80%;
     margin-top: 10px;
+    margin-left: 5px;
+}
+
+#rollQuest {
+    margin-bottom: 5px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 10px;
 }
 
 .inputField {

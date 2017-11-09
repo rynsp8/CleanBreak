@@ -36,7 +36,7 @@
                       <a class="nav-link" href="#" data-toggle="modal" data-target="#rateModal">Rate</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Recommend</a>
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#recommendModal">Recommend</a>
                     </li>
                   </ul>
                 </div>
@@ -67,20 +67,20 @@
                         <input type="text" id="nameInput" class ="inputField" required> <br>
                         <label for="emailInput">Email: </label>
                         <input type="email" id="emailInput" class ="inputField" required> <br>
+                        <p id="rollQuest">Which way does the paper roll?</p>
                         <label for="overRadio">Over</label>
                         <input type="radio" id="overRadio" name="rollDirection" required>
                         <label for="underRadio">Under</label>
                         <input type="radio" id="underRadio" name="rollDirection" required> <br>
                         <!-- <p id="errorMSG">Hey, Check a button! We're not savages...</p> <br> -->
                         <!-- <input type="submit" id="subBTN" class="btn btn-default" value="Submit" onclick="toServer.html"> -->
-                        <button type="submit" id="subBTN" class="btn btn-default" href="toServer.html">Submit</button>
-                        <button type="button" id="cnlBTN" class="btn btn-default" data-dismiss="modal" onclick="checkCNL">Cancel</button>
+                        
                     </form>
 
                   </div>
                   <div class="modal-footer">
-                    <!-- <input type="submit" class="btn btn-default" value= "submit" onclick="">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->
+                    <button type="submit" id="subBTN" class="btn btn-default" href="toServer.html">Submit</button>
+                    <button type="button" id="cnlBTN" class="btn btn-default" data-dismiss="modal" onclick="checkCNL">Cancel</button>
                   </div>
                 </div>
               </div>    
@@ -133,7 +133,30 @@
                 </div>
             </div>
             
-        
+            <!-- Recommend Modal -->
+            <div class="modal fade" id="recommendModal" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Recommend Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <h4 class="modal-title">Recommend the Revolution!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Liek what we do?  Share with your friends!</p>
+                            <div>
+                                <label for="emailInput">Email: </label>
+                                <input type="email" id="emailInput" class ="inputField" required> <br>
+                            </div>
+                            <div class="modal-footer">
+                                    <input type="submit" class="btn btn-default" value= "submit" onclick="">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
 
         <div id="upperContent" class="pl-4 mt-3">
             <h2>Why We Do What We Do.</h2>
