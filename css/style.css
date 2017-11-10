@@ -134,11 +134,23 @@ Sign Up Modal
     background-color: #2E86C1;
 }
 
-#errorMSG {
-    display: none;
-    color: red;
-    font-weight: bold;
+
+
+/********************************
+Search Bar
+********************************/
+.bg-light {
+    background-color: #f8f9fa!important;
+    margin-bottom: 10px;
 }
+
+.btn-outline-success {
+    color: black;
+    background-color: #AED6F1;
+    background-image: none;
+    border-color: #AED6F1;
+}
+
 
 
 
