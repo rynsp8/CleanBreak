@@ -14,6 +14,12 @@ _____________________________________________
 
 12 October, 2017
 
-removed the error message for my radio buttons and added some javascript to clear out the form when the cancel button is clicked.
+Removed the error message for my radio buttons and added some javascript to clear out the form when the cancel button is clicked.
+
+_____________________________________________
+
+9 November, 2017
+
+Added quite a bit of items to the website, Rate Modal, Recommend Modal, Search Bar... Will need to add search functionality to the Google Map.
 
 _____________________________________________
