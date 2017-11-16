@@ -1,4 +1,4 @@
-//create an array of interesting facts related to bathrooms
+//created an array of interesting facts related to bathrooms
 var facts = 
     [
         'Arthur Giblin is believed to have invented the first flushable toilet.',

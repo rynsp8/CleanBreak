@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,12 +42,7 @@
               </nav>
         </div>
     
-        <!-- <div class="container">
-            <h2>Join the Revolution!</h2> -->
-            <!-- Trigger the modal with a button -->
-            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button> -->
-          
-            <!-- Modal -->
+            <!-- SignUp Modal with 'required' form elements -->
             <div class="modal fade" id="signUpModal" role="dialog">
               <div class="modal-dialog">
               
@@ -86,7 +80,7 @@
               </div>    
             </div> 
 
-            <!-- Rate Modal I will be attempting to use a 5 star rating system-->
+            <!-- Rate Modal using 5 star rating system that was suggested and found at CodePen with minor custom CSS -->
             <div class="modal fade" id="rateModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -113,18 +107,10 @@
                             </fieldset>
                             </div>
                             <div class="modal-footer">
-                                    <input type="submit" class="btn btn-default" value= "Submit" onclick="">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <input type="submit" id="rateSubBTN" class="btn btn-default" value= "Submit" onclick="">
+                                    <button type="button" id="rateCnlBTN" class="btn btn-default" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
-                        
-                        <!-- below is jQuery that returns a number that can be passed to a database -->
-                        <script>
-                                $('.star.rating').click(function(){
-                                    console.log( $(this).parent().data('stars') + ", " + $(this).data('rating'));
-                                    $(this).parent().attr('data-stars', $(this).data('rating'));
-                                });
-                        </script>
     
                         </div>
                         
@@ -133,7 +119,7 @@
                 </div>
             </div>
             
-            <!-- Recommend Modal -->
+            <!-- Recommend Modal, nothing special other than rounding out the UX... don't want any dead links -->
             <div class="modal fade" id="recommendModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -150,8 +136,8 @@
                                 <input type="email" id="emailInput" class ="inputField" required> <br>
                             </div>
                             <div class="modal-footer">
-                                    <input type="submit" class="btn btn-default" value= "Submit" onclick="">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <input type="submit" id="recSubBTN" class="btn btn-default" value= "Submit" onclick="">
+                                    <button type="button" id="recCnlBTN" class="btn btn-default" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -167,7 +153,7 @@
         </div>
 
         <!-- Possibly in later versions of this page I will remove the lowerContent paragraph and replace it with something
-        more useful forcing a change.-->
+        more useful forcing a change. -->
 
         <div id="lowerContent" class="pl-4 pr-4">
             <h2>Interesting Facts</h2>
@@ -206,10 +192,6 @@
 
                 infoWindow = new google.maps.InfoWindow;
 
-                // var marker = new google.maps.Marker({
-                //     position: louisVille,
-                //     map: map
-                // });
 
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {
@@ -225,7 +207,7 @@
                         handleLocationError(true, infoWindow, map.getCenter());
                         });
                 } else {
-                    // Browser doesn't support Geolocation
+                    // If Browser doesn't support Geolocation
                     handleLocationError(false, infoWindow, map.getCenter());
                 }
             }
@@ -247,7 +229,7 @@
                 var email = document.getElementById('emailInput');
                 var over = document.getElementById('overRadio');
                 var under = document.getElementById('underRadio');
-                    console.log('it works')
+                    //console.log('it works')
                     name.value = '';
                     email.value = '';
                     under.checked = false;
